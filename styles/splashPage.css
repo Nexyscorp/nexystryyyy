@@ -1,97 +1,134 @@
-body {
-  background-color: rgb(255, 255, 255);
-  overflow-y: hidden;
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Ablation";
+  src: url('fonts/Ablation_PersonalUse.otf');
+}/* Reset and base styles */
+
+
+
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-#cursor_dot {
-  height: 10px;
-  width: 10px;
-  background-color: rgb(0, 0, 0);
-}
-
-#cursor_outline {
-  width: 40px;
-  height: 40px;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
-}
-
-#cursor_dot,
-#cursor_outline {
-  position: fixed;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  pointer-events: none;
-}
-
-pre {
-  text-align: center;
-  font-size: 5vw;
-  font-family: "Anton SC", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: rgb(0, 0, 0);
-  margin: 0 0 5vh 0;
-  padding: 0 5%;
-  z-index: 4;
-}
-
-#exploreButton {
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 20px;
-  font-family: "Anton SC", sans-serif;
-  width: 275px;
-  max-width: 80%;
-  transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  z-index: 3;
-  margin-left: 300px;
-  pointer-events: auto; /* Ensures the button is clickable */
-}
-
-#exploreButton:hover {
-  background-color: rgb(248, 96, 8);
-  color: rgb(255, 255, 255);
-  transform: scale(1.05);
+  cursor: none;
 }
 
 #bg {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   z-index: 0;
 }
 
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#exploreButton {
+  border: 3px solid #000000;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  font-family: 'Anton SC', sans-serif;
+  font-size: 1.2rem;
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 100px;
+  margin: 150px;
+  color: rgb(0, 0, 0);
+}
+.exploreButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#exploreButton:hover {
+  background-color: #ffffff;
+  color: #ee0505;
+  transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text-content pre {
+  font-size: 3vw;
+  font-family: 'MonumentExtended';
+  font-weight: bolder;
+  color: #000000;
+}
+
+#cursor_dot,
+#cursor_outline {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+#cursor_dot {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+
+#cursor_outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
-  pre {
+  .text-content pre {
     font-size: 8vw;
   }
 
   #exploreButton {
-    transform: translateX(-200px);
-    margin-right: 150px;
-    padding-right: 15px;
-    width: 50%;
+    font-size: 1rem;
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  pre {
+  .text-content pre {
     font-size: 10vw;
   }
 
   #exploreButton {
-    padding-right: 50px;
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }
