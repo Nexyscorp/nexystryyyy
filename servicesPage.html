@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalistic Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./styles/servicesPage.css">
+</head>
+<body>
+    <section class="wrapper1">
+        <!-- <div id="star1"></div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> -->
+    </section>
+    <section class="wrapper"> 
+        <div id="cursor_dot" data-cursor-dot></div>
+        <div id="cursor_outline" data-cursor-outline></div>
+    </section>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="aboutPage.html" >About</a></li>
+            <li><a href="servicesPage.html" class="active">Services</a></li> 
+            <li><a href="contactPage.html">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="text-slider">
+            <div><h1>Website <br> Development.</h1></div>
+            <div><h1>Website  <br> Designing</h1></div>
+            <div><h1>A journey over borders <br> & generations.</h1></div>
+            <!-- <div><h1>You are the <br> stylist.</h1></div>
+            <div><h1>To be on the <br> forefront.</h1></div> -->
+        </div>
+
+        <div class="image-slider">
+            <div style="background-image: url('./assets/Adithya.jpg');"></div>
+            <div style="background-image: url('./assets/postgre.png');"></div>
+            <div style="background-image: url('./assets/mongoDb.png');"></div>
+        </div>
+    </div>
+
+    <div class="slider-control">
+        <button class="prev" type="button">&larr;</button>
+        <button class="next" type="button">&rarr;</button>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts/servicesPage.js"></script>
+</body>
+</html>

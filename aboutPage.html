@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company About Page</title>
+    <link rel="stylesheet" href="styles/aboutPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.3/locomotive-scroll.min.css" />
+</head>
+<body data-scroll-container>
+    <section class="wrapper"> 
+        <div id="cursor_dot" data-cursor-dot></div>
+        <div id="cursor_outline" data-cursor-outline></div>
+    </section>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="aboutPage.html" class="active">About</a></li>
+            <li><a href="servicesPage.html">Services</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container min-h-screen">
+        <main class="flex-1">
+            <section class="w-full py-12 scroll-animate">
+                <div class="container">
+                    <div class="grid-container">
+                        <div class="text-content">
+                            <div class="text-space">
+                                <h1>About Our Company</h1>
+                                <p>
+                                    We are a team of passionate individuals dedicated to delivering innovative solutions that empower our clients to achieve their goals. With a focus on cutting-edge technology and a commitment to excellence, we strive to be the trusted partner for businesses of all sizes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-bg">
+                            <img src="/placeholder.svg" alt="About" class="image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why-choose-nexify" data-scroll-section>
+                <div class="container">
+                    <h2>Our Moto</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            <h3>Quality Assurance</h3>
+                            <p>We adhere to the highest standards of quality, ensuring your project is delivered with precision and attention to detail.</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                            </svg>
+                            <h3>Expertise</h3>
+                            <p>Our team of experienced web developers and designers possess the skills and knowledge to bring your</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <h3>Client</h3>
+                            <p>Expertise</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full py-12 bg-muted scroll-animate">
+                <div class="container">
+                    <div class="grid-container-2">
+                        <div class="profile-bg">
+                            <div class="founder-image">
+                                <img src="./assets/jks.jpg" alt="JKS" class="image-round">
+                            </div>
+                            <div class="text-space">
+                                <h2>Keerthi Shankkar J</h2>
+                                <p class="role">Co-Founder & CTO</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ex, beatae necessitatibus aut numquam quia asperiores dolor vel, quod ratione quidem eum quo quasi quos eius nobis accusantium provident nihil!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-bg">
+                            <div class="founder-image">
+                                <img src="./assets/Adithya.jpg" alt="SAI" class="image-round">
+                            </div>
+                            <div class="text-space">
+                                <h2>Adithya Sai Srinivas B</h2>
+                                <p class="role">Co-Founder & CEO</p>
+                                <p>
+                                    Jane is a highly skilled technologist with a deep understanding of cutting-edge technologies. As the co-founder and CTO, she leads our team of engineers in developing innovative solutions that push the boundaries of what's possible. Her passion for technology and commitment to excellence have been instrumental in driving our company's growth and success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="scripts/aboutPage.js"></script>
+</body>
+</html>

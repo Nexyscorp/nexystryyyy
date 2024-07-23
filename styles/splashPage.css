@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#cursor_dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+#cursor_outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+#cursor_dot,
+#cursor_outline {
+  position: fixed;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+pre {
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  margin: 0 0 5vh 0;
+  padding: 0 5%;
+  z-index: 4;
+}
+
+#exploreButton {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: "Anton SC", sans-serif;
+  width: 275px;
+  max-width: 80%;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  z-index: 3;
+  margin-left: 300px;
+  pointer-events: auto; /* Ensures the button is clickable */
+}
+
+#exploreButton:hover {
+  background-color: rgb(248, 96, 8);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  pre {
+    font-size: 8vw;
+  }
+
+  #exploreButton {
+    transform: translateX(-200px);
+    margin-right: 150px;
+    padding-right: 15px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  pre {
+    font-size: 10vw;
+  }
+
+  #exploreButton {
+    padding-right: 50px;
+  }
+}
